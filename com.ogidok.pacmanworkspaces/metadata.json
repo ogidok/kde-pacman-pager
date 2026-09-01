@@ -1,0 +1,11 @@
+{
+    "KPlugin": {
+        "Id": "com.ogidok.pacmanworkspaces",
+        "Name": "Pacman Workspaces",
+        "Version": "1.0",
+        "Description": "Pacman style workspace indicator",
+        "Category": "Windows and Tasks"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
