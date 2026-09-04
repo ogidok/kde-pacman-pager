@@ -19,8 +19,6 @@ PlasmoidItem {
     Layout.fillWidth: !isVertical
     Layout.fillHeight: isVertical
 
-    readonly property var ghostColors: ["#FF0000", "#FFB8FF", "#00FFFF", "#FFB852"]
-
     TaskManager.VirtualDesktopInfo {
         id: desktopInfo
     }
@@ -98,8 +96,8 @@ PlasmoidItem {
                     id: contentText
                     anchors.centerIn: parent
                     
-                    text: delegateRoot.isCurrent ? "󰮯" : "󰊠"
-                    color: delegateRoot.isCurrent ? Kirigami.Theme.highlightColor : root.ghostColors[index % root.ghostColors.length]
+                    text: delegateRoot.isCurrent ? "󰮯" : "●"
+                    color: delegateRoot.isCurrent ? Kirigami.Theme.highlightColor : Kirigami.Theme.textColor
                     font.pixelSize: Kirigami.Theme.defaultFont.pixelSize * 1.5
                     
                     Behavior on color {
