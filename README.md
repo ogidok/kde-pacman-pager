@@ -1,6 +1,7 @@
 # Pacman Workspaces for KDE Plasma 6
 ## Preview
-<img width="225" height="33" alt="image" src="https://github.com/user-attachments/assets/e2e91584-2ec9-404c-b5d6-2156b6308477" />
+<img width="201" height="37" alt="image" src="https://github.com/user-attachments/assets/c9732fb6-6487-4825-8097-3e746a4f8a3a" />
+
 
 A minimal and playful virtual desktop pager for KDE Plasma 6, inspired by Pac-Man. 
 
