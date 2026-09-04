@@ -87,7 +87,10 @@ PlasmoidItem {
                     hoverEnabled: true
                     cursorShape: Qt.PointingHandCursor
                     onClicked: {
-                        let cmd = 'dbus-send --session --dest=org.kde.KWin /VirtualDesktopManager org.freedesktop.DBus.Properties.Set string:"org.kde.KWin.VirtualDesktopManager" string:"current" variant:string:"' + delegateRoot.desktopId + '"';
+                        let val = delegateRoot.desktopId;
+                        let isNumber = !isNaN(val) && val.indexOf("-") === -1;
+                        let variantType = isNumber ? "variant:uint32:" : "variant:string:";
+                        let cmd = 'dbus-send --session --print-reply --dest=org.kde.KWin /VirtualDesktopManager org.freedesktop.DBus.Properties.Set string:"org.kde.KWin.VirtualDesktopManager" string:"current" ' + variantType + '"' + val + '"';
                         executable.connectSource(cmd);
                     }
                 }
