@@ -97,7 +97,7 @@ PlasmoidItem {
                     anchors.centerIn: parent
                     
                     text: delegateRoot.isCurrent ? "󰮯" : "●"
-                    color: delegateRoot.isCurrent ? Kirigami.Theme.highlightColor : Kirigami.Theme.textColor
+                    color: delegateRoot.isCurrent ? "#FFFF00" : Kirigami.Theme.textColor
                     font.pixelSize: Kirigami.Theme.defaultFont.pixelSize * 1.5
                     
                     Behavior on color {
